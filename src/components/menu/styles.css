@@ -1,0 +1,132 @@
+.menu-container,
+.menu-container-resp{
+    display: flex;
+    height: 100vh;
+    width: 25%;
+    left: 0%;
+    top: 0%;
+    border-radius: 0px;
+    flex-direction: column;
+    background: #662323;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);  
+}
+.menu-close-resp-container{
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    padding-top: 2%;
+    padding-right: 2%;
+    
+}
+.menu-close-resp{
+    display: none;
+    width: 40px;
+    height: 40px;
+    filter: invert(1) sepia(1) hue-rotate(0deg) saturate(0%);
+    cursor: pointer;
+    transition: 0.3s;
+    padding: 10%;
+}
+.menu-icon-container{
+    display: flex;
+    width: 100%;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 50px;
+}
+.menu-icon{
+    display: flex;
+    width: 70%;
+    height: 100%;
+}
+.list-container{
+    display: flex;
+    flex-direction: column;
+}
+.menu-title{
+    display: flex;
+    width: 111px;
+    height: 28px;
+    margin-left: 40px;
+    margin-top: 20px;
+    cursor: default;
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 28px;
+    color: #FFFFFF;
+
+}
+.menu-options{
+    display: flex;
+    width: 100%;
+    height: 20px;
+    margin-top: 10px;
+    border-left: 5px solid #662323;
+
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+
+    cursor: default;
+}
+.active{
+    border-left: 5px solid #E86060;
+}
+
+.menu-options-name{
+    text-decoration: none;
+    color: #FFFFFF;
+    margin-left: 35px;
+    cursor: default;
+}
+.menu-options-name:hover{
+    color: #E86060;
+}
+@media screen and (max-width: 978px) {
+    .menu-container{
+        width: 100%;
+        display: flex;
+        background-color: #662323;
+        transition: 0.5s ease;
+        position: fixed;
+        z-index: 100;
+        margin-left: -1000px;
+    }
+    .menu-icon-container{
+        display: flex;
+        width: 100%;
+        margin-left: 0px;
+        margin-right: 40px;
+        margin-top: 1.5%;
+        padding-left: 40px;
+    }
+    .menu-icon{
+        display: flex;
+        width: 260px;
+        height: 100%;
+    }
+    .menu-container-resp{
+        width: 100%;
+        min-height: 100%;
+        display: flex;
+        background-color: #662323;
+        transition: 0.5s ease;
+        position: absolute;
+        z-index: 100;
+        margin-left: 0px;
+    }
+    .menu-close-resp-container,
+    .menu-close-resp{
+        display: flex;
+        transition: 0.5s ease;
+    }
+    ::-webkit-scrollbar {
+        display: none;
+    }
+}

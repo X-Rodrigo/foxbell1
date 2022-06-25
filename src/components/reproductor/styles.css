@@ -1,0 +1,192 @@
+.player-container{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    background: #EB5757;
+}
+.player-song-details{
+    display: flex;
+    width: 32%;
+    height: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.player-song-img{
+    display: flex;
+    object-fit: cover;
+    width: auto;
+    height: auto;
+}
+.player-song-desc{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.player-song-title{
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    color: #FFFFFF;
+}
+@keyframes slidein {
+  from {
+    margin-left: -250%;
+    width: auto;
+  }
+
+  to {
+    margin-left: 0%;
+    width: auto;
+  }
+}
+.player-song-artist{
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: #FFFFFF;
+}
+.player-details-1{
+    display: flex;
+    width: 32%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.bi-skip-start-fill{
+    display: flex;
+    color: #fff;
+    font-size: 29px;
+}
+.btn-play-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #FF7676;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+}
+.fa-play,
+.fa-pause{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 22px;
+    cursor: pointer;
+}
+.bi-skip-end-fill{
+    display: flex;
+    color: #fff;
+    font-size: 29px;
+}
+.player-details-2{
+    display: flex;
+    width: 32%;
+    height: 100%;
+    margin-right: 2%;
+    justify-content: flex-end;
+    align-items: center;
+}
+.btn-volume-progress{
+    display: flex;
+    height: 6px;
+    width: 100%;
+    border-radius: 100px;
+    background: #FFFFFF;
+    border-radius: 100px;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+
+}
+input[type='range'] {
+    display: block;
+    width: 130px;
+}
+input[type='range']:focus {
+    outline: none;
+}
+input[type='range'],
+input[type='range']::-webkit-slider-runnable-track,
+input[type='range']::-webkit-slider-thumb {
+    -webkit-appearance: none;
+}
+input[type=range]::-webkit-slider-thumb {
+  background-color: #fff;
+  width: 20px;
+  height: 20px;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  margin-top: -9px;
+}
+input[type=range]::-moz-range-thumb {
+  background-color: #fff;
+  width: 15px;
+  height: 15px;
+  border: 3px solid #fff;
+  border-radius: 50%;
+}
+  
+input[type=range]::-ms-thumb {
+  background-color: #fff;
+  width: 20px;
+  height: 20px;
+  border: 3px solid #fff;
+  border-radius: 50%;
+}
+input[type=range]::-webkit-slider-runnable-track {
+  background-color: #fff;
+  height: 3px;
+}
+input[type=range]:focus::-webkit-slider-runnable-track {
+  outline: none;
+}
+input[type=range]::-moz-range-track {
+  background-color: #fff;
+  height: 3px;
+}
+input[type=range]::-ms-track {
+  background-color: #fff;
+  height: 3px;
+}
+input[type=range]::-ms-fill-lower {
+  background-color: HotPink
+}
+input[type=range]::-ms-fill-upper {
+  background-color: black;
+} 
+.bi-volume-off-fill,
+.bi-volume-up-fill
+,.bi-volume-mute-fill
+,.bi-volume-down-fill{
+    display: flex;
+    color: #fff;
+    font-size: 29px;
+    transition: 0.5s ease;
+    margin-left: 1%;
+}
+@media screen and (max-width: 978px) {
+.player-song-title{
+  animation-duration: 4.5s;
+  animation-name: slidein;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  }
+}
+@media screen and (max-width: 500px) {
+  input[type='range'] {
+    display: block;
+    width: 80px;
+}
+}
